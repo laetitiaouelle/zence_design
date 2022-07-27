@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+}
+.shadow{
+  box-shadow: 0px 3px 11px #0000000f;
+  border-radius: 20px;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+}
+.main{
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  height: calc( 100% - 30px);
+  width: 100%;
+  
+}
+.pattern{
+  width: 100%;
+  height: 200px;
+  position:absolute
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pattern img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dashbaord{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: #fafafa;
+  display: flex;
+  justify-content:flex-end;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
+  position: absolute;
+  height: calc(100% - 30px);
+  background-color: #ffffff;
+  width: 25pc;
+  left: 20px;
+  bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+.d-main{
+  width: calc(100% - 32pc);
+  height: 100%;
+}
+.title{
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section1{
+  width: 100%;
+  height: 200px;
+  background-color: #78fcfe;
+}
+.section2{
+  width: 100%;
+  height: 200px;
+  background-color: #121e50;
+}
+.section3{
+  width: 100%;
+  height: 200px;
+  background-color: #6200b9;
+}
+.spacebetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card{
+  width: 50%;
+  height: 100px;
+  background-color: #fafafa;
+}
+.cone{
+  margin-right: 15px;
+}
+.ctwo{
+  margin-left: 15px;
+}
+.logoplace{
+  height: 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.avatar{
+  width: 90px;
+  height: 90px;
+  background-color: #121e50;
+  border-radius: 50%;
+}
+.userinfo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.greating{
+  color: #ababab;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.username{
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.amount{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.amount h2:first-child{
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.amount h2:last-child{
+  margin-top: 0 !important;
+}
+
+.navbar{
+}
+.navbar ul{
+ list-style: none;
+}
+.navbar ul li{
+ margin: 0 auto 15px auto;
+}
+.navbar ul li a, a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ababab;
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar ul li a span:first-child{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #121e50;
+  border-radius: 50%;
+  margin-right: 17px;
+}
+.navbar ul li a span:last-child{
+  display: block;
 }
