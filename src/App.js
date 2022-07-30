@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 import pattern from './img/5708208.jpg';
 import logo from './img/logo.PNG';
 
 function App() {
+  const [isOn, setIsOn]= useState(true)
   return (
     <div className="App">
       <div className="pattern">
@@ -10,20 +12,43 @@ function App() {
       </div>
       <div className="main">
         <div className="dashbaord">
-          <div className="d-main" >
+          <div className="d-main" > 
             <h2 className="title" >
               Dashbaord
             </h2>
             <section className="section1 spacebetween " >
-              <div className="card cone">
+              <div className="card shadow cone">
+                <div className="card-main">
+                  <span className="title" >
+                    Available Balance
+                  </span>
+                  <div className="is-credit">
+                    <span className="title" >
+                      Credit
+                    </span>
+                    <span className={ isOn?" switchLeft main-switch ":"main-switch switchRight"} >
+                      <span className="switch-btn shadow2" >
 
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div className="bloc-amount" >
+                  12,234$
+                </div>
+                <div className="visa-detail spacebetween">
+                  <span className="hided-code">
+                    **** <span className="last-num" >4532</span>
+                  </span>
+                  <span className="" ></span>
+                </div>
               </div>
               <div className="card ctwo">
 
               </div>
             </section>
             <section className="section2 spacebetween" >
-              <div className="card cone">
+              <div className="card shadow cone">
 
               </div>
               <div className="card ctwo">

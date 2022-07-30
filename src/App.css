@@ -14,6 +14,10 @@ ul, li{
   box-shadow: 0px 3px 11px #0000000f;
   border-radius: 20px;
 }
+.shadow2{
+  box-shadow: 0px 3px 11px #00000080;
+  border-radius: 20px;
+}
 .App{
   width: 100%;
   height: 100vh;
@@ -63,14 +67,14 @@ ul, li{
   width: calc(100% - 32pc);
   height: 100%;
 }
+
 .title{
   letter-spacing: 1px;
   font-weight: 500;
 }
 .section1{
   width: 100%;
-  height: 200px;
-  background-color: #78fcfe;
+  margin-top: 60px;
 }
 .section2{
   width: 100%;
@@ -89,15 +93,63 @@ ul, li{
 }
 .card{
   width: 50%;
-  height: 100px;
   background-color: #fafafa;
+  padding: 20px;
 }
 .cone{
   margin-right: 15px;
 }
+.cone .card-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cone .card-main span{
+  display: block;
+}
+.cone .card-main .title{
+  color: #ababab;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.is-credit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-switch{
+  width: 35px;
+  height: 20px;
+  background-color: #e6e8ea;
+  border-radius: 15px;
+  display: flex !important;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.switch-btn{
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+.bloc-amount{
+  font-weight: 500;
+  font-size: 34px;
+  margin: 30px 0;
+}
+.main-switch.switchLeft{
+  justify-content: flex-end;
+}
+.main-switch.switchRight{
+  justify-content: flex-start;
+}
 .ctwo{
   margin-left: 15px;
 }
+
 .logoplace{
   height: 50px;
   display: flex;
@@ -171,4 +223,4 @@ ul, li{
 }
 .navbar ul li a span:last-child{
   display: block;
-}
+} 
